@@ -1,0 +1,247 @@
+#pane1{
+    -fx-background-image: url("startBackground3.jpg");
+}
+
+#start {
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+
+#start:hover {
+    -fx-background-color:
+        linear-gradient(#e68400, #ffd65b),
+        linear-gradient(#f2ba44, #ffef84),
+        linear-gradient(#efaa22, #ffea6a),
+        linear-gradient(#f8c202 0%, #eea10b 50%, #ffe657 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+
+#gameOver{
+    -fx-background-image: url("startBackground3.jpg");
+}
+
+#closeButton {
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-padding: 10 20 10 20;
+}
+
+#closeButton:hover {
+    -fx-background-color:
+        linear-gradient(#e68400, #ffd65b),
+        linear-gradient(#f2ba44, #ffef84),
+        linear-gradient(#efaa22, #ffea6a),
+        linear-gradient(#f8c202 0%, #eea10b 50%, #ffe657 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-padding: 10 20 10 20;
+}
+
+#paneInput{
+    -fx-background-image: url("startBackground3.jpg");
+}
+
+#startGame {
+    -fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 20 10 20;
+}
+
+#startGame:hover {
+    -fx-background-color:
+        linear-gradient(#e68400, #ffd65b),
+        linear-gradient(#f2ba44, #ffef84),
+        linear-gradient(#efaa22, #ffea6a),
+        linear-gradient(#f8c202 0%, #eea10b 50%, #ffe657 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 20 10 20;
+}
+
+#youWonPane{
+    -fx-background-image: url("startBackground3.jpg");
+}
+
+#tableScore .table-column {
+  -fx-alignment: CENTER;
+}
+
+#viewButton{
+-fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 20 10 20;
+}
+
+#viewButton:hover {
+    -fx-background-color:
+        linear-gradient(#e68400, #ffd65b),
+        linear-gradient(#f2ba44, #ffef84),
+        linear-gradient(#efaa22, #ffea6a),
+        linear-gradient(#f8c202 0%, #eea10b 50%, #ffe657 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 20 10 20;
+}
+
+#enrollUser{
+-fx-background-color:
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 20 10 20;
+}
+
+
+#enrollUser:hover {
+    -fx-background-color:
+        linear-gradient(#e68400, #ffd65b),
+        linear-gradient(#f2ba44, #ffef84),
+        linear-gradient(#efaa22, #ffea6a),
+        linear-gradient(#f8c202 0%, #eea10b 50%, #ffe657 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 20 10 20;
+}
+
+#tableScore .column-header,
+#tableScore .column-header-background .filler{
+
+    -fx-background-color: #fafad2;
+}
+
+#tableScore .column-header .label{
+
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-aligment: CENTER;
+}
+
+#tableScore .cell{
+  -fx-background-color: #fafad2;
+  -fx-border-color: #f0e68c;
+  -fx-text-fill: #000000;
+  -fx-aligment: CENTER;
+}
+
+#tableMitarbeiter-row-cell:selected {
+    -fx-background-color: #ffd700;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-row-cell:selected {
+   -fx-background-color-fill: #ffa500;
+}
+.table-row-cell:selected .text {
+       -fx-fill: #ffa500;
+}
+
+#niveauChoiceBox {
+  -fx-background-color: #f5f5dc;
+  -fx-mark-color: #000000;
+}
+
+#niveauChoiceBox .context-menu{
+    -fx-background-color: #f5f5dc;
+}
+
+#niveauChoiceBox .menu-item:focused {
+    -fx-background-color: #f0e68c;
+}
+
+#niveauChoiceBox .menu-item > .label {
+    -fx-text-fill: #696969;
+}
+
+#niveauChoiceBox .menu-item:focused > .label {
+    -fx-text-fill: #696969;
+}
+
+#berufPositionChoiceBox > .label {
+    -fx-text-fill: #000000;
+}
+
+#speedG{
+
+    -fx-background-color: #f5f5dc;
+}
+
+#numberG{
+
+     -fx-background-color: #f5f5dc;
+}
+
+#enrollMe{
+
+     -fx-background-color: #f5f5dc;
+}
+
+.text-field {
+    -fx-prompt-text-fill: #a9a9a9;
+}

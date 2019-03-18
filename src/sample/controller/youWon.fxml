@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="youWonPane" prefHeight="454.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.controller.YouWonController">
+  <children>
+    <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="94.99990000000253" prefWidth="572.0" text="WELL, SEEMS LIKE YOU WON THIS TIME...">
+      <font>
+        <Font name="Century Gothic Bold" size="30.0" />
+      </font>
+      <textFill>
+        <Color green="0.961" red="1.000" fx:id="x1" />
+      </textFill>
+    </Label>
+    <TableView fx:id="tableScore" layoutX="14.0" layoutY="182.0" prefHeight="200.0" prefWidth="572.0">
+      <columns>
+        <TableColumn prefWidth="204.0" text="Username" fx:id="usernameColumn" />
+        <TableColumn prefWidth="177.0" text="Score" fx:id="scoreColumn" />
+        <TableColumn prefWidth="191.0" text="Date" fx:id="dateColumn" />
+      </columns>
+    </TableView>
+    <Label layoutX="23.0" layoutY="152.0" prefWidth="201.0" text="LEADERBOARD" textFill="$x1">
+      <font>
+        <Font name="Century Gothic Bold" size="20.0" />
+      </font>
+    </Label>
+    <Button fx:id="viewLeaderBoard" layoutX="515.0" layoutY="410.0" mnemonicParsing="false" onAction="#showResults" prefWidth="71.0" text="View" />
+    <TextField fx:id="enterUsername" layoutX="376.0" layoutY="151.0" prefWidth="210.0" promptText="Enter Username" />
+    <Label layoutX="23.0" layoutY="99.0" prefWidth="353.0" text="Do you want to join the competition?" textFill="#fff500">
+      <font>
+        <Font name="Century Gothic Bold" size="17.0" />
+      </font>
+    </Label>
+    <Button fx:id="addUser" layoutX="409.0" layoutY="410.0" mnemonicParsing="false" onAction="#enrollMe" text="Enroll Me" />
+    <Label fx:id="message" layoutX="23.0" layoutY="414.0" prefWidth="339.0" textFill="#fff500">
+      <font>
+        <Font name="Century Gothic Bold" size="15.0" />
+      </font>
+    </Label>
+  </children>
+  <stylesheets>
+    <URL value="@../Stuff/custom.css" />
+  </stylesheets>
+</AnchorPane>
