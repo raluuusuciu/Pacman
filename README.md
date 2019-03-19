@@ -8,4 +8,4 @@ The game gives the user the possibility to register in a database.
 They can try beat each other's score and finally "end the game" by eating all of the burgers.
 Pacman sounds are included for a better experience.
 
-<img src="pacman_1.jpg" width="300">
+![ScreenShot](pacman_1.jpg)
