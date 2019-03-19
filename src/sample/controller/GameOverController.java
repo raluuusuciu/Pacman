@@ -47,6 +47,12 @@ public class GameOverController implements Initializable {
         usernameColumn.setCellValueFactory(new PropertyValueFactory<>("username"));
         scoreColumn.setCellValueFactory(new PropertyValueFactory<>("score"));
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("resultDate"));
+
+        try {
+            viewLeaderBoard();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public void viewLeaderBoard() throws SQLException {
@@ -67,5 +73,7 @@ public class GameOverController implements Initializable {
 
         su.saveUser(username, score);
         message.setText("You're in the game! Good luck!");
+
+        viewLeaderBoard();
     }
 }

@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -39,7 +40,7 @@ public class GameController {
     void initializeGame(Integer nrGhosts, Integer speed) throws IOException {
 
         service.view.drawMaze(service.initializeMaze(), root);
-        root.getChildren().add(service.view.drawPacman(service.pacman.getX(), service.pacman.getY(), 4));
+        root.getChildren().add(service.view.drawPacman(service.pacman.getX(), service.pacman.getY()));
         Service.listGhosts.forEach(gh -> {
             try {
                 root.getChildren().add(service.view.drawGhost(gh.getX(), gh.getY()));
@@ -314,7 +315,7 @@ public class GameController {
                 )
         );
 
-        root.getChildren().add(service.view.drawPacman(service.pacman.getX(), service.pacman.getY(), 3));
+        root.getChildren().add(service.view.drawPacman(service.pacman.getX(), service.pacman.getY()));
 
         Service.listGhosts.forEach(gh -> {
 
@@ -338,8 +339,9 @@ public class GameController {
         gameOverWindow.setTitle("HAHAHA, YOU LOSE");
         Scene scene = new Scene(parent, 634.0, 398.0);
         gameOverWindow.setScene(scene);
+        gameOverWindow.getIcons().add(new Image("pacmanRight.jpg"));
 
-        String musicFile = "D:\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\Pacman DeathGame Over Noise (HD).mp3";
+        String musicFile = "D:\\AN 2\\SEMESTRUL 1\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\Pacman DeathGame Over Noise (HD).mp3";
         Media sound = new Media(new File(musicFile).toURI().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(sound);
         mediaPlayer.setOnEndOfMedia(() -> mediaPlayer.seek(Duration.minutes(1)));
@@ -358,6 +360,7 @@ public class GameController {
         youWonWindow.setTitle("GG, WP");
         Scene scene = new Scene(parent, 600.0, 454.0);
         youWonWindow.setScene(scene);
+        youWonWindow.getIcons().add(new Image("pacmanRight.jpg"));
 
         youWonWindow.show();
     }

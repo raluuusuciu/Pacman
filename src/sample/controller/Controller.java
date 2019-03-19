@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -25,6 +26,7 @@ public class Controller {
         Stage stageInput = new Stage();
         stageInput.setScene(sceneInput);
         stageInput.setTitle("INPUT FIRST");
+        stageInput.getIcons().add(new Image("pacmanRight.jpg"));
         stageInput.show();
 
     }

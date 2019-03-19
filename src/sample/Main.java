@@ -4,6 +4,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
@@ -20,8 +22,9 @@ public class Main extends Application {
         primaryStage.setTitle("MY PACMAN, BEST PACMAN");
         Scene scene = new Scene(root, 500, 300);
         primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image("pacmanRight.jpg"));
 
-        String musicFile = "D:\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\PAC-MAN Namco Sounds - Start Music.mp3";
+        String musicFile = "D:\\AN 2\\SEMESTRUL 1\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\PAC-MAN Namco Sounds - Start Music.mp3";
         Media sound = new Media(new File(musicFile).toURI().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(sound);
         mediaPlayer.setOnEndOfMedia(() -> mediaPlayer.seek(Duration.minutes(1)));

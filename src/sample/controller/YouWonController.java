@@ -46,6 +46,18 @@ public class YouWonController implements Initializable {
         usernameColumn.setCellValueFactory(new PropertyValueFactory<>("username"));
         scoreColumn.setCellValueFactory(new PropertyValueFactory<>("score"));
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("resultDate"));
+
+        List<User> userList = null;
+        try {
+            userList = su.findAll();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        assert userList != null;
+        userList.sort(Comparator.comparing(User::getScore));
+
+        ObservableList<User> userObservableList = FXCollections.observableList(userList);
+        tableScore.getItems().addAll(userObservableList);
     }
 
     @FXML

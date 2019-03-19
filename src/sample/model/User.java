@@ -23,4 +23,12 @@ public class User {
     public int getScore() {
         return score;
     }
+
+    public Date getResultDate() {
+        return resultDate;
+    }
+
+    public void setResultDate(Date resultDate) {
+        this.resultDate = resultDate;
+    }
 }

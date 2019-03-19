@@ -35,7 +35,7 @@ public class View {
         if (isWall.equals(Constants.FOOD)) {
 
             block = new Rectangle(row * 50, column * 50, 50, 50);
-            Image blockImage = new Image(new FileInputStream("D:\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\food.jpg"));
+            Image blockImage = new Image(new FileInputStream("D:\\AN 2\\SEMESTRUL 1\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\food.jpg"));
             ImagePattern blockImagePattern = new ImagePattern(blockImage);
             block.setFill(blockImagePattern);
         }
@@ -43,41 +43,15 @@ public class View {
         return block;
     }
 
-    public Rectangle drawPacman(Integer x, Integer y, Integer direction) throws FileNotFoundException {
+    public Rectangle drawPacman(Integer x, Integer y) throws FileNotFoundException {
 
         Rectangle pacman = null;
 
-        if (direction == 1) {
 
-            pacman = new Rectangle(x * 50, y * 50, 50, 50);
-            Image pacImage = new Image(new FileInputStream("D:\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\pacmanUp.jpg"));
-            ImagePattern pacImagePattern = new ImagePattern(pacImage);
-            pacman.setFill(pacImagePattern);
-        }
-
-        if (direction == 2) {
-
-            pacman = new Rectangle(x * 50, y * 50, 50, 50);
-            Image pacImage = new Image(new FileInputStream("D:\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\pacmanDown.jpg"));
-            ImagePattern pacImagePattern = new ImagePattern(pacImage);
-            pacman.setFill(pacImagePattern);
-        }
-
-        if (direction == 3) {
-
-            pacman = new Rectangle(x * 50, y * 50, 50, 50);
-            Image pacImage = new Image(new FileInputStream("D:\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\pacmanLeft.jpg"));
-            ImagePattern pacImagePattern = new ImagePattern(pacImage);
-            pacman.setFill(pacImagePattern);
-        }
-
-        if (direction == 4) {
-
-            pacman = new Rectangle(x * 50, y * 50, 50, 50);
-            Image pacImageOpen = new Image(new FileInputStream("D:\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\pacmanRight.jpg"));
-            ImagePattern pacImagePattern = new ImagePattern(pacImageOpen);
-            pacman.setFill(pacImagePattern);
-        }
+        pacman = new Rectangle(x * 50, y * 50, 50, 50);
+        Image pacImageOpen = new Image(new FileInputStream("D:\\AN 2\\SEMESTRUL 1\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\pacmanRight.jpg"));
+        ImagePattern pacImagePattern = new ImagePattern(pacImageOpen);
+        pacman.setFill(pacImagePattern);
 
         return pacman;
 
@@ -86,7 +60,7 @@ public class View {
     public Rectangle drawGhost(Integer x, Integer y) throws FileNotFoundException {
 
         Rectangle ghost = new Rectangle(x * 50, y * 50, 50, 50);
-        Image ghostImage = new Image(new FileInputStream("D:\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\ghost3.jpg"));
+        Image ghostImage = new Image(new FileInputStream("D:\\AN 2\\SEMESTRUL 1\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\ghost3.jpg"));
         ImagePattern ghostImagePattern = new ImagePattern(ghostImage);
         ghost.setFill(ghostImagePattern);
 

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="paneInput" prefHeight="300.0" prefWidth="599.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller.InputController">
+<AnchorPane fx:id="paneInput" prefHeight="300.0" prefWidth="599.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.controller.InputController">
   <children>
     <Label alignment="CENTER" layoutX="14.0" layoutY="33.0" prefHeight="81.0" prefWidth="572.0" text="BUT FIRST, LEMME TAKE SOME INPUT" textFill="#fff500" wrapText="true">
       <font>
