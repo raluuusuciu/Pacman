@@ -8,8 +8,16 @@ Pacman in JavaFX
 ## Getting started
 Pacman enters a new world where the main goal is to eat all the hamburgers.  
 The subgoal is doing that without being caught by the famous ghost.   
-The game gives the user the possibility to register in a database.  
-They can try beat each other's score and finally "end the game" by eating all of the burgers.  
+The game gives the user the possibility to register in a *database*.  
+The players can try beat each other's score and reach the maximum number of points.  
 Pacman sounds are included for a better experience.  
 
-![pacman1](https://user-images.githubusercontent.com/37831510/54670544-8aa82480-4afc-11e9-8d60-0dffa9ae7727.png)
+![pacman1](https://user-images.githubusercontent.com/37831510/54670544-8aa82480-4afc-11e9-8d60-0dffa9ae7727.png)  
+
+## Game settings
+Before starting the game, the player must first enter some input.  
+
+![pacman2](https://user-images.githubusercontent.com/37831510/54672036-db6d4c80-4aff-11e9-8c8c-056b791ea817.gif)  
+You may enter the number of ghots and their speed.  
+In case of choosing the custom speed you'll have to write the speed in the textbox below.  
+
