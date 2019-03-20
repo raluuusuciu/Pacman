@@ -45,11 +45,11 @@ public class View {
 
     public Rectangle drawPacman(Integer x, Integer y) throws FileNotFoundException {
 
-        Rectangle pacman = null;
+        Rectangle pacman;
 
 
         pacman = new Rectangle(x * 50, y * 50, 50, 50);
-        Image pacImageOpen = new Image(new FileInputStream("D:\\AN 2\\SEMESTRUL 1\\Java\\Laborator4Pacman\\src\\sample\\Stuff\\pacmanRight.jpg"));
+        Image pacImageOpen = new Image(new FileInputStream("D:\\AN 2\\SEMESTRUL 1\\Java\\Laborator4Pacman\\resources\\pacmanRight.jpg"));
         ImagePattern pacImagePattern = new ImagePattern(pacImageOpen);
         pacman.setFill(pacImagePattern);
 

@@ -55,7 +55,7 @@ public class GameOverController implements Initializable {
         }
     }
 
-    public void viewLeaderBoard() throws SQLException {
+    private void viewLeaderBoard() throws SQLException {
 
         tableScore.getItems().clear();
 

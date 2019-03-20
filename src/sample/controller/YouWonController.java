@@ -29,8 +29,6 @@ public class YouWonController implements Initializable {
     @FXML
     public TableColumn<Object, Object> dateColumn;
     @FXML
-    public Button viewLeaderBoard;
-    @FXML
     public TableView<User> tableScore;
     @FXML
     public Button addUser;
@@ -47,21 +45,15 @@ public class YouWonController implements Initializable {
         scoreColumn.setCellValueFactory(new PropertyValueFactory<>("score"));
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("resultDate"));
 
-        List<User> userList = null;
         try {
-            userList = su.findAll();
+            showResults();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        assert userList != null;
-        userList.sort(Comparator.comparing(User::getScore));
-
-        ObservableList<User> userObservableList = FXCollections.observableList(userList);
-        tableScore.getItems().addAll(userObservableList);
     }
 
     @FXML
-    public void showResults() throws SQLException {
+    private void showResults() throws SQLException {
 
         tableScore.getItems().clear();
 
@@ -79,5 +71,7 @@ public class YouWonController implements Initializable {
 
         su.saveUser(username, 44);
         message.setText("You're in the game! Good luck!");
+
+        showResults();
     }
 }
