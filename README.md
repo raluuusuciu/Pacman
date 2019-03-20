@@ -8,4 +8,4 @@ The game gives the user the possibility to register in a database.
 They can try beat each other's score and finally "end the game" by eating all of the burgers.
 Pacman sounds are included for a better experience.
 
-![ScreenShot](pacman_1.jpg)
+![pacman1](https://user-images.githubusercontent.com/37831510/54670544-8aa82480-4afc-11e9-8d60-0dffa9ae7727.png)
