@@ -2,7 +2,7 @@
 Pacman in JavaFX  
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/37831510/54670755-0904c680-4afd-11e9-91b5-8cf114b6e241.jpg" width="80" height="80 align="center" />
+<img src="https://user-images.githubusercontent.com/37831510/54670755-0904c680-4afd-11e9-91b5-8cf114b6e241.jpg" width="80" height="80" />
 </p>
 
 ## Getting started
@@ -12,7 +12,7 @@ The game gives the user the possibility to register in a *database*.
 The players can try beat each other's score and reach the maximum number of points.  
 Pacman sounds are included for a better experience.  
 
-![pacman1](https://user-images.githubusercontent.com/37831510/54670544-8aa82480-4afc-11e9-8d60-0dffa9ae7727.png)  
+<img src="https://user-images.githubusercontent.com/37831510/54670544-8aa82480-4afc-11e9-8d60-0dffa9ae7727.png"/>
 
 ## Game settings
 Before starting the game, the player must first enter some input.  
@@ -20,4 +20,8 @@ Before starting the game, the player must first enter some input.
 ![pacman2](https://user-images.githubusercontent.com/37831510/54672036-db6d4c80-4aff-11e9-8c8c-056b791ea817.gif)  
 You may enter the number of ghots and their speed.  
 In case of choosing the custom speed you'll have to write the speed in the textbox below.  
+
+![pacman3](https://user-images.githubusercontent.com/37831510/54673584-36ed0980-4b03-11e9-904a-4eb5b0fcdc4f.gif)  
+
+
 
