@@ -1,5 +1,9 @@
 # Pacman
-Pacman in JavaFX
+Pacman in JavaFX  
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/37831510/54670755-0904c680-4afd-11e9-91b5-8cf114b6e241.jpg" width="80" height="80 align="center" />
+</p>
 
 ## Getting started
 Pacman enters a new world where the main goal is to eat all the hamburgers.  
